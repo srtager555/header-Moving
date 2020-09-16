@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,900;1,100;1,400&display=swap">
+    <link rel="stylesheet" href="style copy.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header moving</title>
+</head>
+
+<body>
+    <header>
+        <h1>Hello, I'm Carlos && Ponce</h1>
+        <h2>Develope Front-End</h2>
+        <a href="#i">More</a>
+    </header>
+    <main id="i">
+        <div>
+            <h2>I am</h2>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum, voluptate labore. Assumenda, ut placeat
+                voluptatum delectus corrupti qui? Repudiandae cupiditate dolor vitae reprehenderit necessitatibus? Enim
+                sit reprehenderit laudantium odio iusto.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste veniam minima sunt incidunt non, cum
+                saepe cupiditate ex quo doloribus eius laboriosam, quis adipisci officia iusto deserunt eos tenetur
+                rerum.
+            </p>
+        </div>
+    </main>
+
+    <script>
+
+        window.addEventListener("scroll" , function () {
+            var header = document.querySelector('header');
+            var y = window.scrollY / 5
+
+            header.style.backgroundPosition = "center -" + y + "px";
+        })
+    </script>
+</body>
+
+</html>
